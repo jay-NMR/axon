@@ -1,0 +1,60 @@
+\begin{thebibliography}{1}
+
+\bibitem{suminaite2019myelinated}
+Daumante Suminaite, David~A Lyons, and Matthew~R Livesey.
+\newblock Myelinated axon physiology and regulation of neural circuit function.
+\newblock {\em Glia}, 67(11):2050--2062, 2019.
+
+\bibitem{assaf2005composite}
+Yaniv Assaf and Peter~J Basser.
+\newblock Composite hindered and restricted model of diffusion (charmed) mr
+  imaging of the human brain.
+\newblock {\em Neuroimage}, 27(1):48--58, 2005.
+
+\bibitem{assaf2008axcaliber}
+Yaniv Assaf, Tamar Blumenfeld-Katzir, Yossi Yovel, and Peter~J Basser.
+\newblock Axcaliber: a method for measuring axon diameter distribution from
+  diffusion mri.
+\newblock {\em Magnetic Resonance in Medicine: An Official Journal of the
+  International Society for Magnetic Resonance in Medicine}, 59(6):1347--1354,
+  2008.
+
+\bibitem{basser1995inferring}
+Peter~J Basser.
+\newblock Inferring microstructural features and the physiological state of
+  tissues from diffusion-weighted images.
+\newblock {\em NMR in Biomedicine}, 8(7):333--344, 1995.
+
+\bibitem{basser1994mr}
+Peter~J Basser, James Mattiello, and Denis LeBihan.
+\newblock Mr diffusion tensor spectroscopy and imaging.
+\newblock {\em Biophysical journal}, 66(1):259--267, 1994.
+
+\bibitem{lee2020impact}
+Hong-Hsi Lee, Sune~N Jespersen, Els Fieremans, and Dmitry~S Novikov.
+\newblock The impact of realistic axonal shape on axon diameter estimation
+  using diffusion mri.
+\newblock {\em Neuroimage}, 223:117228, 2020.
+
+\bibitem{benjamini2016white}
+Dan Benjamini, Michal~E Komlosh, Lynne~A Holtzclaw, Uri Nevo, and Peter~J
+  Basser.
+\newblock White matter microstructure from nonparametric axon diameter
+  distribution mapping.
+\newblock {\em NeuroImage}, 135:333--344, 2016.
+
+\bibitem{dyrby2013contrast}
+Tim~B Dyrby, Lise~V S\"ogaard, Matt~G Hall, Maurice Ptito, and Daniel~C
+  Alexander.
+\newblock Contrast and stability of the axon diameter index from microstructure
+  imaging with diffusion mri.
+\newblock {\em Magnetic resonance in medicine}, 70(3):711--721, 2013.
+
+\bibitem{lee2020time}
+Hong-Hsi Lee, Antonios Papaioannou, Sung-Lyoung Kim, Dmitry~S Novikov, and Els
+  Fieremans.
+\newblock A time-dependent diffusion mri signature of axon caliber variations
+  and beading.
+\newblock {\em Communications biology}, 3(1):354, 2020.
+
+\end{thebibliography}

@@ -1,0 +1,135 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{setspace}
+% Useful packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\usepackage{fontspec}
+%\usepackage[style=authoryear, backend=biber]{biblatex}
+
+%\setmainfont{Times New Roman} % Use real Times New Roman
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Sub-resolution  Axon Microstructure Characterization Using Diffusion Fingerprints}
+\author{You}
+
+\begin{document}
+\maketitle
+\doublespacing
+
+\begin{abstract}
+	the structure of axon, beading or realted to diffusion; propagator show beads. 
+	the diameter is not easy to have
+	controversal point of transerval diffusion; we cannot see D vertical.
+	
+	
+	Diffusion correlation of D(delta) with D(2*delta) = 13-interval PFG seqeunce. egain functions; single-sided can do those too.
+	DTI is assuming one components but really there are 2 component. 
+	
+	2D-experiments 
+	2D diffusion time correaltion expeiremnt using a single direction gradient paulsen 
+	do axon connect Dx Dy
+	
+	
+	
+	1) what ist he diffusion in axon
+	2) understanding our interpertion of trans/longitudnal direction. diffusion anistropy, cannot align our gradient with the axon. 
+	transversal diffusion less than calcualted or measured, compare the two direction. the alignmens issues. the transversal diffusion cannot have the diameter. 
+\end{abstract}
+
+
+\section{Introduction}
+
+{\bf  Importance of understanding axon}
+%Axons are the wires of nervous sytem. Their geometry and inulations directly shapes the cognition and vulnerability to injury and disease.   Axon diameter and density provide information about the function and performance of white matter pathways.
+Axons are the fundamental conduits of signal communication in the nervous system \cite{suminaite2019myelinated}.  
+Their micro-geometry, including caliber, packing density, and deviations from straight trajectories, influences conduction, functional connectivity, and reflecting to injury and disease. 
+Noninvasive quantification of axonal microstructure therefore remains a central goal in diffusion MRI (dMRI) and diffusion NMR.
+%cellular changes in development, aging, and pathology
+
+%Axonal microgeometry in brain white matter (WM) is special, as axonal diameters are much thinner than the clinically attainable diffusion length Ld(t) ~ 10 μm
+
+%The axon diameter distribution (ADD) is a key microstructural feature in the peripheral and central nervous systems. Conduction velocity scales with axon diameter (Tasaki et al., 1943; Waxman et al.,1995) and therefore provides an important functional marker that reflects information transmission in the nervous system
+
+%the orentation of axons show the injuires. 
+
+{\bf how are axon usually been modeled by NMR}
+
+Diffusion measurements probe tissue microstructure because water molecules sample restrictions imposed by cellular boundaries.  The trajector of molecule assemble can be tracked to reflect the geometry of tissue. 
+
+In white matter, many microstructural models approximate intra-axonal water as sticks (effectively 1D Gaussian diffusion with $D_\perp \approx 0$) or as straight impermeable cylinders, enabling estimation of axon orientation, density, and (under specific conditions) diameter~\cite{assaf2005composite,assaf2008axcaliber}. The two usually used methods are CHSRMED and AxCaliber.
+
+DTI is a microstructure biomarker of axon bundles \cite{basser1995inferring,basser1994mr}.
+
+
+\cite{lee2020impact} showed how the undulation shape the diffusion results.
+\cite{benjamini2016white}
+
+
+%Diffusion is critical for micro-structrure charaterization of axons beacuse the water molecues can explore the whole space and geometery of the stucture of tissue. dMRI has been applied for white matter microstructural features, such as axon diameter, fiber density and fiber orentation based on the interactions of free molecules and geometries of axons. 
+%But almost all of those applications are based on the assumption of a sticker model of axon.
+	
+
+Such features introduce time-dependent and waveform-dependent diffusion signatures that can confound diameter and orientation estimates, especially under practical hardware constraints on gradient amplitude, diffusion time, and echo time \cite{dyrby2013contrast}.  The diameter can be obtained from models based on those assumption \cite{};
+
+Real axons deviate from the idealized straight cylinder: they may exhibit undulations, beading, and caliber variations \cite{lee2020time}. 
+As a result, model mismatch and limited experimental sensitivity can lead to biased or weakly identifiable microstructural parameters.
+	
+%1. the simple assumption of tube
+%The axons has been simplified as a stick for the diffusion model, where the 1D Gaussian diffusion is determined by a constant diffusion coefficient. 
+%Thereafter, models for obtaining the diameter of axons and the orenation of axons are obtained based on the assumption. 
+%2. diameter from the perpendicular, 1) the diffusion time is too long 2) the boundle of axon cannot easy have the perpendicular. cite Axcalibar
+
+
+%So far, many WM studies focused on the diffusion time dependence perpendicular to axons, to probe the inner axon diameter.
+
+{\bf what are the issues of those methods}
+But in practice, the axons are not just a straight and narrow tube. 
+They have features like beads, undulation ect \cite{lee2020time}. 
+Therefore, the based on the diffusion coefficient to have the diameter leads to strong uncertainties. Besides, because of the undulation, it is hard to find the perpendicular direction of axons trend. 
+It is also hard to have short enough diffusion measure time to resovle the fine parameter, limited by the maximum gradient and shortest echo time contrainted by the hardware~\cite{dyrby2013contrast}. 
+Therefore the fractional anisotropy, direction and dispersion of axon bundles are not accurate. 
+
+{\bf Our findings}
+at short time, the molecules sense the water molecule itself, at intermediate time, the water moelcues sense the boundaries of axon, at long time the molecules sense tortuosity of medium. In axon, at short times, where $ t \ll \frac{a^2}{D_0}$, follows Mitra’s short-time expansions. At intermediate times, where $ t \approx \frac{a^2}{D_0}$ follows Neuman cylinder model and at long times, $ t \gg \frac{a^2}{D_0}$	follows Callaghan’s diffusion propagator theory.
+
+\section{Results}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 1 \linewidth]{propogator.png}
+	\caption{The simulated propagator distribution from axon 909.}
+	\label{fig:propogator_axon909}
+\end{figure}
+The propagor shows structure details of axon.  At short diffusion time, the water molecues only sense the structure with distance similar to $\sqrt{2D_0t}$. The propogator is assembly of all strucuture features, $f(r_s)$, as in Fig. \ref{fig:propogator_axon909}(b). If there is no boundary liminitation, the propagator shall be gaussian distribution. 
+With increasing time, the molecules start to sense structures along the the axon, beads pinching and bulging along the axis.  Thus we have multiple peaks on the propagator.
+With even longer time the molecules sense  media tortuosity. 
+
+(1) Very small |x|: molecules that stayed near their origin
+(2) trapped in pockets / beads
+(3)	bouncing back and forth near a boundary
+(4)	stuck in very tortuous “loops”
+(5)	Intermediate |x|: molecules that diffused but kept hitting obstacles so net displacement is modest
+(6)	Large |x| (tails): molecules that happened to find relatively open, less hindered paths and accumulate long net displacements
+
+
+ The broad one represent the 1D diffusion model and the narrow one represent the cross section effects?
+
+However, the water molecues begin to sense the long-distance features of the media. With sufficient long time, the molecues dynamics is mainly restricted by the medium structure, such as tortuosity. 
+
+
+The side peak means the sharp twist or the narrow channel of the axon. But what the superpostion of propagator means?
+
+
+%\bibliographystyle{alpha}
+\bibliographystyle{unsrt}
+\bibliography{sample}
+
+\end{document}
